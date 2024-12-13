@@ -19,7 +19,7 @@ jobs:
       uses: denolib/setup-deno@v2
      
     - name: Build
-      run: deno task build # Cambia "build" por la tarea que uses en tu archivo deno.json o deno.jsonc
+      run: deno run build # Cambia "build" por la tarea que uses en tu archivo deno.json o deno.jsonc
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
