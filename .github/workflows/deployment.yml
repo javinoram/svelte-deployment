@@ -19,7 +19,9 @@ jobs:
       uses: denoland/setup-deno@v2
       with:
         deno-version: v2.x
-     
+    - name: Install Vite
+      run: deno install --allow-net --allow-read --allow-write --allow-run -n vite https://esm.sh/vite@latest
+
     - name: Build
       run: deno run build # Cambia "build" por la tarea que uses en tu archivo deno.json o deno.jsonc
 
